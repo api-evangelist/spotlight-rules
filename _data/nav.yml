@@ -1,0 +1,101 @@
+- name: Spotlight
+  nav:
+
+    - name: Rules
+      symbol: auto_stories
+      sub:
+
+        - name: Home
+          href: https://spotlight-rules.com
+              
+        - name: Spectral
+          href: https://spotlight-rules.com#spectral                                                             
+
+        - name: Vacuum
+          href: https://spotlight-rules.com#vacuum   
+
+        - name: Schema
+          href: https://spotlight-rules.com#schema       
+
+        - name: IDE
+          href: https://spotlight-rules.com#ide
+
+        - name: GitHub Actions
+          href: https://spotlight-rules.com#github-actions   
+
+        - name: Rulesets
+          href: https://spotlight-rules.com#rulesets
+
+        - name: Tooling
+          href: https://spotlight-rules.com#tooling
+
+        - name: Services
+          href: https://spotlight-rules.com#services          
+
+- name: API Evangelist LLC
+  nav:
+
+    - name: Website
+      symbol: info
+      href: https://apievangelist.com  
+      sub:
+
+        - name: API Evangelist
+          href: https://apievangelist.com/  
+
+        - name: API Evangelist
+          href: https://apievangelist.com/2026/
+
+
+    - name: About
+      symbol: info
+      href: https://apievangelist.com/about
+      sub:
+
+        - name: API Evangelist
+          href: https://apievangelist.com/about/api-evangelist 
+
+        - name: Kin Lane
+          href: https://apievangelist.com/about/kin-lane     
+
+        - name: This Site
+          href: https://apievangelist.com/about/this-site                        
+
+    - name: Contact
+      symbol: contact_support
+      href: https://apievangelist.com/contact
+      sub:
+
+        - name: Contact Form
+          href: https://apievangelist.com/contact 
+
+        - name: LinkedIn
+          href: https://www.linkedin.com/company/api-evangelist/   
+
+        - name: Bluesky
+          href: https://bsky.app/profile/apievangelist.com     
+
+        - name: Mastodon
+          href: https://mastodon.apievangelist.com/web/@api    
+
+        - name: Newsletter
+          href: https://buttondown.com/apievangelist     
+
+        - name: Apple Podcasts
+          href: https://podcasts.apple.com/us/podcast/api-evangelist-conversations/id1765157921  
+
+        - name: Spotify
+          href: https://open.spotify.com/show/3Yd46TJhCvXvWX7UZEcFlO    
+
+        - name: Postman
+          href: https://www.postman.com/api-evangelist       
+
+        - name: GitHub
+          href: https://github.com/api-evangelist                               
+                                                
+    - name: Toolbox
+      symbol: construction
+      sub:
+
+        - name: APIs
+          href: https://contracts.apievangelist.com                                                           

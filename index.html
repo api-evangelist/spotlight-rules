@@ -1,0 +1,986 @@
+---
+layout: default
+section: 'Home'
+title: Spotlight Rules
+summary: Shining a spotlight on how rules are quietly transforming how we do APIs.
+---
+
+<!-- Page header -->
+<div class="row align-items-center mb-7">
+  <div class="col-auto">
+    <img src="assets/img/glyph-spotlight-rules-short.png"
+      width="100" style="margin-top: 8px; margin-left: 20px;">
+  </div>
+  <div class="col">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a class="text-body-secondary" href="#">Home Page</a></li>
+      </ol>
+    </nav>
+
+    <!-- Heading -->
+    <h1 class="fs-4 mb-0">{{ page.title }}</h1>
+    <p>{{ summary.title }}</p>
+  </div>
+</div>
+
+
+<!-- Content -->
+<div class="row gx-xl-9">
+
+  <div class="col-12 col-xxl-4 order-xxl-1">
+
+    <div class="position-sticky mb-8" style="top: 2rem">
+
+      {% include newsletter-signup.html %}
+
+    </div>
+
+  </div>
+
+
+  <div class="col-12 col-xxl-8 order-xxl-0">
+
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <h3 class="fs-6 mb-0">Background</h3>
+          <div>
+            <p>Spectral rules began as a way to lint JSON or YAML OpenAPI documents, providing a configuration format for the Spectral CLI.
+              Spectral saw its <a href="https://github.com/stoplightio/spectral/commits/develop/?after=048924d358ccb6432e368ae3d0b15cb78c72a6dd+1994">first
+                commit in 2018</a>, but <a href="https://github.com/wework/speccy/commits/master/?after=3c2cc952261c4cb314b6a8729da99032417375bd+944">was
+                originally born in 2016 as Speccy</a>. Since then, the Spectral rules format has been adopted,
+              forked, and evolved by a number of other services and tools, growing into something more than
+              originally intended—and Spotlight Rules is all about shining a light on this evolution.</p>
+
+            <p>Similar to Spectral, the OpenAPI specification began its life as Swagger, which also started as just a
+              configuration file for Swagger UI and Codegen. It took a few years before Swagger found its way to
+              becoming the specification it is today. Acknowledging this journey, I would like to shine a spotlight on
+              the evolution of Spectral rules, its transformation into Vacuum, and the interoperability it provides
+              in solutions like Redocly and APIMATIC, as well as in CI/CD pipelines and IDEs like VS Code—hopefully
+              encouraging more reuse and adoption along the way.</p>
+
+            <p>You can use Spectral rules with Spectral CLI today. Both are open source and allow you to quickly
+              get up and running governing your OpenAPI, AsyncAPI, Arazzo, and other specifications. Common
+              rulesets are easy to find on the web and GitHub, and can be generated using your LLM of choice,
+              helping you set up the guardrails your API lifecycle needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="general">
+        <div class="mb-4">
+          <div>
+            <center><img src="assets/img/glyph-spotlight-rules-long.png" width="75%"></center>
+          </div>
+        </div>
+    </section>    
+    <br>
+
+    <section>
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <a name="spectral"></a>
+              <h3 class="fs-6 mb-0">The Spectral Rule Spotlight</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/3Nukh23">Spectral Rule Docs</a></h3>
+                    <p class="text-body-secondary">Spectral rules are a formal schema that can be used to describe a set
+                      of instructions that can be applied to any YAML or JSON artifact while be crafted in editors,
+                      developed within our IDEs, and deployed via CI/CD pipelines. This is the original documentation
+                      for Spectral rules, as provided by Stoplight, detailing the properties of rules and rulesets.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/3Nukh23"><img src="/assets/img/spectral-square.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/4b2tZTh">Spectral CLI Repo</a></h3>
+                    <p class="text-body-secondary">Spectral is a linting and validation tool designed for API
+                      specifications and structured data formats. It allows you to validate and lint OpenAPI v2 & v3.x,
+                      AsyncAPI, and Arazzo v1 documents using ready-to-use rulesets, while also supporting custom
+                      rulesets for linting any JSON or YAML objects. Spectral helps enforce automated API style guides
+                      through rulesets, improving consistency across all your APIs.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/4b2tZTh"><img src="/assets/img/spectral-square.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <a name="vacuum"></a>
+          <h3 class="fs-6 mb-0">The Vacuum Rules Spotlight</h3>
+          <div>
+            <p>As Spectral has evolved, it has been adopted by numerous services and tools, but none have
+              embraced and evolved it as deeply as pb33f (Princess Heavy Beef) with their investment in Vacuum, and more
+              importantly, libopenapi and the OpenAPI Doctor. I have seen multiple service and tooling providers invest in the
+              OpenAPI space, but nobody has gone the extra mile like Dave has with his work on the spec and his
+              "forking" of the Spectral CLI configuration file, allowing Spectral rules to be reborn as Vacuum
+              rules.</p>
+            <p>If you are interested in shifting your schema and API linting into the next gear and getting out on the open
+              road, I recommend losing yourself in the pb33f universe for a month. Play around with the Doctor, explore
+              what Vacuum can do for you locally and in your pipelines. Vacuum is a refreshing look at what is possible
+              when it comes to linting, governing, and guiding your OpenAPI artifacts—and was the inspiration for
+              Spotlight Rules, encouraging others to follow Dave's lead and take rules to new heights.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="fs-6 mb-0">Available Standards & Tooling</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/4pJtCjY">Vacuum Rules Docs</a></h3>
+                    <p class="text-body-secondary">Vacuum Rules are a fork of Spectral rules, while attempting to
+                      maintain backward compatiability with Spectral. Vacuum introduces three properties (at last count)
+                      to the Spectral rule schema, adding 'howToFix', 'id', and 'category'. Vacuum rules supports both
+                      RFC 9535 (the official JSONPath standard) and JSON Path Plus extensions, providing full
+                      compatibility with Spectral rulesets.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/3Nukh23"><img src="/assets/img/vacuum-logo-square.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/4pJtCjY">Vacuum Linter</a></h3>
+                    <p class="text-body-secondary">Vacuum is an ultra-super-fast, lightweight OpenAPI linter and quality
+                      checking tool, written in golang and inspired by Spectral. Vacuum is a legit replacement for
+                      Spectral CLI, which is written from the ground up to be super fast and handle large OpenAPI
+                      artifacts, providing you with a robust tool to bake into your API development lifecycle and
+                      pipeline.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/4b2tZTh"><img src="/assets/img/vacuum-logo-square.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/3UTwuOF">The Doctor</a></h3>
+                    <p class="text-body-secondary">The Doctor is a super flashy, but also super powerful OpenAPI editor
+                      that also uses Vacuum rules and linter to help you govern and guide the development of your
+                      OpenAPI represenations of your APIs. The Doctor is a fresh look at what an OpenAPI editor can be,
+                      while also pushing forward the conversation around what linting rules can be using Vacuum</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/3UTwuOF"><img src="/assets/img/doctor-square.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <a name="schema"></a>
+          <h3 class="fs-6 mb-0">The Schema Spotlight</h3>
+          <div>
+            The difference between Spectral rules and Vacuum rules exists between the JSON Schema used to validate each
+            specification. I will be watching these schema, and regularly doing a "diff" on them to understand what is
+            evolving, or not. I encourage other service and tooling vendors to evolve their own vocabulary, and I am
+            happy to shine a spotlight on your approach, highlighting how you are evolving your rules to meet the
+            specific needs of your domain.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="fs-6 mb-0">JSON Schema to Validate Rules</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/463nawr">Spectral Rules JSON Schema</a></h3>
+                    <p class="text-body-secondary">The official JSON Schema for Spectral rules, used to validate rules
+                      within the CLI tooling, but you can also use to validate as part of your operations. You can use
+                      this JSON Schema in your CLI, editors, IDE, and pipelines to make sure that all of your rules are
+                      compliant with the spec, and the tooling you will be using.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/463nawr"><img src="/assets/img/json-schema.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/4qpsgfo">Vacuum Rules JSON Schema</a></h3>
+                    <p class="text-body-secondary">The official JSON Schema for Vacuum rules, used to validate rules
+                      within the CLI tooling, but you can also use to validate as part of your operations. You can use
+                      this JSON Schema in your CLI, editors, IDE, and pipelines to make sure that all of your rules are
+                      compliant with the spec, and the tooling you will be using.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/4qpsgfo"><img src="/assets/img/json-schema.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <a name="ide"></a>
+          <h3 class="fs-6 mb-0">The Integrated Development Environment (IDE) Spotlight</h3>
+          <div>
+            <p>You can use linting rules in your IDE, using VSCode plugins provided by both Spectral and Vacuum, and Redocly and APIMATIC both also provide governance tooling that supports Spectral rulesets, but go further with their own approach to linting and governance. These plugins allow teams to linting OpenAPI, AsyncAPI, but really, any JSON or YAMl artifact where they are already working.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="fs-6 mb-0">Using Rules in VSCode</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/4qA4AoL">Spectral VSCode</a></h3>
+                    <p class="text-body-secondary">The Spectral VS Code extension lets you lint OpenAPI, AsyncAPI, Arazzo, and JSON Schema documents directly in your editor—either on save or as you type—with support for custom rulesets and intellisense to help you write them.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/4qA4AoL"><img src="/assets/img/vscode.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/4pDWmur">Vacuum VSCode</a></h3>
+                    <p class="text-body-secondary">The Vacuum VS Code plugin automatically detects and lints OpenAPI documents (YAML or JSON) directly in your editor, with support for custom rules, rulesets, and functions via a configuration file.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/4pDWmur"><img src="/assets/img/vscode.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/45II4BG">Redocly VSCode</a></h3>
+                    <p class="text-body-secondary">Redocly OpenAPI is a Visual Studio Code extension that helps you write, validate, and maintain your OpenAPI documents. It warns about errors in OpenAPI descriptions and lets you quickly access referenced schemas or open the files that contain them. </p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/45II4BG"><img src="/assets/img/vscode.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/3LmpjgB">APIMATIC VSCode</a></h3>
+                    <p class="text-body-secondary">This extension lets you easily create, validate and lint your API definition documents in any of the supported formats including OpenAPI. The API definition files are not only validated against standard checks but also linted for ensuring smoother SDK generation, Developer Experience Portal generation and API specification format transformation in order to help you build a remarkable API developer experience.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/3LmpjgB"><img src="/assets/img/vscode.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>                         
+
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <a name="github-action"></a>
+          <h3 class="fs-6 mb-0">The GitHub Action Spotlight</h3>
+          <div>
+            <p>Both Spectral and Vacuum provide a GitHub Action to support linting of OpenAPI, AsyncAPI, and other artifacts in your GitHub powered CI/CD pipelines. Which, using the severity of your rules and rulesets, you can use to guide and enforce different patterns across your operations via GitHub Actions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="fs-6 mb-0">Using Rules in VSCode</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/4bBhDS4">Spectral GitHub Action</a></h3>
+                    <p class="text-body-secondary">The Spectral VS Code extension lets you lint OpenAPI, AsyncAPI, Arazzo, and JSON Schema documents directly in your editor—either on save or as you type—with support for custom rulesets and intellisense to help you write them.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/4bBhDS4"><img src="/assets/img/github-actions.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bit.ly/4jPofyC">Vacuum GitHub Action</a></h3>
+                    <p class="text-body-secondary">The Vacuum GitHub Action lints your OpenAPI spec in CI/CD pipelines, posts lint results as comments on pull requests, and can fail builds based on errors or a minimum quality score threshold.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bit.ly/4jPofyC"><img src="/assets/img/github-actions.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>                      
+
+          </div>
+        </div>
+      </div>
+    </section>      
+
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <a name="rulesets"></a>
+          <h3 class="fs-6 mb-0">The Ruleset Spotlight</h3>
+          <div>
+            <p>There are many rules and rulesets available out on GitHub and the web, but I think it is important to highlight some of the big brands out there that are using Spectral, and publishing them on GitHub and to their API portals. These are just a sampling of some of the more interesting ones, but I will make sure and add new rulesets that I find which are interesting and useful, adding to this list over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="fs-6 mb-0">Rulesets in the Wild</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://github.com/adidas/api-guidelines/blob/master/.spectral.yml">Adidas</a></h3>
+                    <p class="text-body-secondary">This is a ruleset published by the shoe company Adidas, sharing what they use to govern and lint their own APIs, with the public as part of their overall operations. Providing you with a set of rules that you can cherry pick from when crafting your own rules, as you learn what you need and what you like, based upon what other companies are doing.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://github.com/adidas/api-guidelines/blob/master/.spectral.yml"><img src="/assets/img/rules.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://github.com/Azure/azure-api-style-guide">Azure</a></h3>
+                    <p class="text-body-secondary">This is a ruleset published by Microsft Azure, sharing what they use to govern and lint their own APIs, with the public as part of their overall operations. Providing you with a set of rules that you can cherry pick from when crafting your own rules, as you learn what you need and what you like, based upon what other companies are doing.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://github.com/Azure/azure-api-style-guide"><img src="/assets/img/rules.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://github.com/digitalocean/openapi/blob/main/spectral/ruleset.yml">Digital Ocean</a></h3>
+                    <p class="text-body-secondary">This is a ruleset published by Digital Ocean, sharing what they use to govern and lint their own APIs, with the public as part of their overall operations. Providing you with a set of rules that you can cherry pick from when crafting your own rules, as you learn what you need and what you like, based upon what other companies are doing.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://github.com/digitalocean/openapi/blob/main/spectral/ruleset.yml"><img src="/assets/img/rules.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>                   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://github.com/stoplightio/spectral-owasp-ruleset">OWASP Top 10</a></h3>
+                    <p class="text-body-secondary">This is a ruleset provided by Stoplight, but focusing on the OWASP Top 10, providing a security focused set of rules that can be applied at design-time, during development, or as part of build pipelines. Providing you with a baseline for security across all of your teams which can be introduced and enforced consistently across teams.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://github.com/stoplightio/spectral-owasp-ruleset"><img src="/assets/img/rules.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>              
+
+
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <a name="tooling"></a>
+          <h3 class="fs-6 mb-0">Open-Source Tooling Spotlight</h3>
+          <div>
+            <p>Here is where I shine a spotlight on the most interesting open-source tooling that have employed rules as part of what they do, offering the ability to mock, test, automate, edit, govern, and do much more using any Spectral or Vacuum rule, that helps you standardize your approach to producing and consuming APIs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="fs-6 mb-0">The Tooling To Use</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://github.com/microcks/microcks-spectral-ruleset">Microcks</a></h3>
+                    <p class="text-body-secondary">Microcks supports and uses Spectral rules as part of their open-source testing and mocking platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://github.com/microcks/microcks-spectral-ruleset"><img src="/assets/img/tools.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://docs.usebruno.com/testing/script/external-libraries">Bruno</a></h3>
+                    <p class="text-body-secondary">Bruno support Spectral rules as part of the pre and post request test scripts, allowing you to lint any schema that is being returned as part of an API request.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://docs.usebruno.com/testing/script/external-libraries"><img src="/assets/img/tools.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://github.com/dweber019/backstage-plugins/tree/main/plugins/api-docs-spectral-linter">Backstage</a></h3>
+                    <p class="text-body-secondary">Backstage has a Spectral plugin that allows for the linting of OpenAPI using Spectral, baking linting and governance into the internal developer portal platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://github.com/dweber019/backstage-plugins/tree/main/plugins/api-docs-spectral-linter"><img src="/assets/img/tools.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>                   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://italia.github.io/api-oas-checker/">API OAS Checker</a></h3>
+                    <p class="text-body-secondary">The Italian Government has a slick open-source REACT aplication that allows the linting and OpenAPI, which I have repurposed to work for any JSON or YAML file and ruleset.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://italia.github.io/api-oas-checker/"><img src="/assets/img/tools.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>     
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://postman-toolbox.postmansolutions.com/governance-playground">Postman Toolbox</a></h3>
+                    <p class="text-body-secondary">This is an indispensable tool created by Jordan over at Postman that helps you craft rules that work, along with the ability to develop custom rules.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://postman-toolbox.postmansolutions.com/governance-playground"><img src="/assets/img/tools.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>                        
+
+
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <a name="services"></a>
+          <h3 class="fs-6 mb-0">Commercial Service Spotlight</h3>
+          <div>
+            <p>I feel it is important to also shine a light on the commercial services that are integrating Spectral into their platforms. While not all of them are investing in and elevating Spectral as a specification, and some are actively extracting value from the ecosystem, I still support commercial solutions putting it to work. Like OpenAPI, keeping Spectral and Vacuum rules open-source, so that it can be used as the life blood of API and schema governance, is part of the reason Spotlight rules exists--this applies in open-source and proprietary solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="fs-6 mb-0">The Tooling To Use</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://www.apimatic.io/blog/2023/10/fix-my-openapi-vs-code-extension">APIMATIC</a></h3>
+                    <p class="text-body-secondary">APIMATIC supports spectral rules, providing an example of a commercial service built on top of the open-source specification, providing the ability to lint your artifacts with many different rules wherever you operate and engage with the platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://www.apimatic.io/blog/2023/10/fix-my-openapi-vs-code-extension"><img src="/assets/img/service.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://bump.sh/blog/api-linting-with-vacuum/">Bump.sh</a></h3>
+                    <p class="text-body-secondary">Bump.sh supports spectral rules, providing an example of a commercial service built on top of the open-source specification, providing the ability to lint your artifacts with many different rules wherever you operate and engage with the platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://bump.sh/blog/api-linting-with-vacuum/"><img src="/assets/img/service.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://learning.postman.com/docs/api-governance/configurable-rules/spectral/">Postman</a></h3>
+                    <p class="text-body-secondary">Postman supports spectral rules, providing an example of a commercial service built on top of the open-source specification, providing the ability to lint your artifacts with many different rules wherever you operate and engage with the platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://learning.postman.com/docs/api-governance/configurable-rules/spectral/"><img src="/assets/img/service.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>                   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://redocly.com/docs/cli/guides/migrate-from-spectral">Redocly</a></h3>
+                    <p class="text-body-secondary">Redocly supports spectral rules, providing an example of a commercial service built on top of the open-source specification, providing the ability to lint your artifacts with many different rules wherever you operate and engage with the platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://redocly.com/docs/cli/guides/migrate-from-spectral"><img src="/assets/img/service.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://scalar.com/">Scalar</a></h3>
+                    <p class="text-body-secondary">Scalar supports spectral rules, providing an example of a commercial service built on top of the open-source specification, providing the ability to lint your artifacts with many different rules wherever you operate and engage with the platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://scalar.com/"><img src="/assets/img/service.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://docs.specmatic.io/contract_driven_development/central_contract_repository.html">Specmatic</a></h3>
+                    <p class="text-body-secondary">Specmatic supports spectral rules, providing an example of a commercial service built on top of the open-source specification, providing the ability to lint your artifacts with many different rules wherever you operate and engage with the platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://docs.specmatic.io/contract_driven_development/central_contract_repository.html"><img src="/assets/img/service.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://docs.treblle.com/explore-treblle/platform/api-governance/ruleset">Treblle</a></h3>
+                    <p class="text-body-secondary">Treblle supports spectral rules, providing an example of a commercial service built on top of the open-source specification, providing the ability to lint your artifacts with many different rules wherever you operate and engage with the platform.</p>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin-right: 25px;">
+                    <a href="https://docs.treblle.com/explore-treblle/platform/api-governance/ruleset"><img src="/assets/img/service.png" width="90"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>                                                   
+
+
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <a name="services"></a>
+          <h3 class="fs-6 mb-0">Story Spotlight</h3>
+          <div>
+            <p>I have a bunch of articles on API Evangelist I'd like to share, plus I know I've curated other useful takes on how to use Spectral and Vacuum, but here are a handful of the most useful and interesting links on the subject. If there is a story you feel should be here, or want to write a story that pushes forward the conversation, please send me the link and I'll consider adding it here if it adds value.</p>
+          </div>
+        </div>
+      </div>
+    </section>   
+
+    <section>
+      
+      <div class="card mb-6 mb-xxl-0">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="fs-6 mb-0">Some Useful Links</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body py-3">
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin: 25px;">
+                    <a href="https://thenewstack.io/improve-the-quality-of-your-apis-with-spectral-linting/"><img src="/assets/img/improve-the-quality-of-your-apis-with-spectral-linting.png" width="125"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>                
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://thenewstack.io/improve-the-quality-of-your-apis-with-spectral-linting/">Improve the Quality of Your APIs with Spectral Linting</a></h3>
+                    <p class="text-body-secondary">Spectral is an open source linting tool for APIs, specifically those described using the OpenAPI specification (formerly known as Swagger) and API definitions, developed by Stoplight. It is designed to help developers create, document and maintain APIs that are easy to use and understand.</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin: 25px;">
+                    <a href="https://apisyouwonthate.com/blog/securing-apis-with-spectral-owasp-ruleset/"><img src="/assets/img/securing-apis-with-the-spectral-owasp-ruleset.png" width="125"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>                
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://apisyouwonthate.com/blog/securing-apis-with-spectral-owasp-ruleset/">Securing APIs with the Spectral OWASP Ruleset</a></h3>
+                    <p class="text-body-secondary">Recently I've been on a run of making new all powerful Spectral rulesets, but so far it's been focused on the concept of automating style guides, with the concrete example of the APIs You Won't Hate: API Style Guide showing how it can be done with NPM and tested with Jest. Here's for a new idea though: instead of just making sure you match an organizations style guide, let's look for security issues!</p>
+                  </a>
+                </div>
+              </div>
+            </div>   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin: 25px;">
+                    <a href="https://apidog.com/blog/spectral-with-typescript/"><img src="/assets/img/how-to-use-spectral-with-typescript.png" width="125"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>                
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://apidog.com/blog/spectral-with-typescript/">How to Use Spectral with TypeScript</a></h3>
+                    <p class="text-body-secondary">Maintaining consistency, quality, and adherence to design standards is paramount for teams using APIs. API specifications like OpenAPI and AsyncAPI provide a blueprint, but ensuring these blueprints are followed correctly across numerous services and teams can be a daunting challenge. This is where API linting tools come into play, and Spectral stands out as a flexible and powerful open-source option. When combined with TypeScript, Spectral empowers developers to create robust, type-safe custom rules, elevating API governance to a new level.</p>
+                  </a>
+                </div>
+              </div>
+            </div>                   
+            <div class="list-group-item px-0">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="avatar avatar-xl rounded" style="padding: 55px 15px 15px 15px; margin: 25px;">
+                    <a href="https://lornajane.net/posts/2020/custom-openapi-style-rules-with-spectral"><img src="/assets/img/custom-openapi-style-rules-with-spectral.png" width="125"
+                        style="background-color: #FFF; border: 2px solid #000; border-radius: 10px; object-fit: cover; width: 100px; height: 100px;"></a>
+                  </div>
+                </div>                
+                <div class="col">
+                  <a class="text-reset" href="#!">
+                    <h3 class="fs-base"> <a href="https://lornajane.net/posts/2020/custom-openapi-style-rules-with-spectral">Custom OpenAPI Style Rules with Spectral</a></h3>
+                    <p class="text-body-secondary">I work quite a bit with OpenAPI specs and with lots of specs and lots of collaborators, keeping the specs all functional (never mind tidy, consistent, or other dreamwords) is a challenge! We use spectral to check our specs, both when we work on them and in the build process. Spectral is great but it has Opinions(TM)! For most users, running Spectral out of the box gives quite a lot of output even on an otherwise valid spec. I do think the default ruleset for Spectral is pretty good, but every situation is different so having your own ruleset to use is a good idea. This post shows how to use a ruleset and some examples.</p>
+                  </a>
+                </div>
+              </div>
+            </div>  
+
+          </div>
+        </div>
+      </div>
+    </section>  
+   
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <h3 class="fs-6 mb-0">Concepts Spotlight</h3>
+          <div>
+            <p>I feel it is important to share a couple of driving concepts beyond Spotlight rules before I finish. First, these rules can be applied to any YAML or JSON artifact, despite the hyper focus on just linting OpenAPI, AsyncAPI, and and Arazzo. I lint all my schema this way. Second, it is important to understand the relationship between JSON Schema and Spectral or Vacuum rules. JSON Schema is about validating your foundation of each JSON or YAML artifact and can be used to guide using intellisense extensions, but your Spectral and Vacuum rules are how you "finish" your artifact for specific experiences.</p>
+            <p>The API OAS Checker checker listed above under tooling does an excellent job of demonstrating this within Monaco Editor, which is also the same editor that VSCode uses. The base JSON Schema for the Monaco Editor provides your schema validation and intellisense, but the Spectral rules and rulesets provide the finish work for your YAML or JSON artifact, helping guide anyone with what they need to finish when it comes to documentation, sandboxes, SDKs, security, and the other experiences that matter most. The relationship between JSON Schema and Spectral rules is what transforms linting and governance into guidance and guardrails.</p>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section class="card" id="general">
+        <div class="mb-4">
+          <div>
+            <center><img src="assets/img/rules-concepts.png" width="100%"></center>
+          </div>
+        </div>
+    </section>    
+
+    <br>
+    <!-- About -->
+    <section class="card card-line bg-body-tertiary border-transparent mb-5" id="general">
+      <div class="card-body">
+        <div class="mb-4">
+          <h3 class="fs-6 mb-0">Next Steps Spotlight</h3>
+          <div>
+            <p>I wanted to get Spotlight Rules published, with the history, narrative, rulesets, tooling, and other resources published. Next I will work on cleaner documentation that helps shine a light on the properties of Spectral rules, but also how they have been extended by Vacuum rules. I have a few of my own extensions I will add into the mix, with tagging to align with OpenAPI 3.2, and begin adding more guidance for teams when it comes to using the LLM of your choice to generate rules and rulesets.</p>
+            <p>If you have any questions, comments, or contributions, please hit me up on LinkedIn or feel free to email me directly at <a href="mailto: info@apievangelist.com">info@apievangelist.com</a>. I am looking to continue elevating rules, and begin to talk more about the challenges that exist across all of the standards, services, and tooling that I have put a spotlight on, and see how we can begin moving beyond just API design governance, and apply rules to all aspects of our operations, at any stage of the lifecycle.</p>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+  </div>
