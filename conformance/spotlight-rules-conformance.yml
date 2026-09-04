@@ -1,0 +1,82 @@
+generated: '2026-09-04'
+method: searched
+source: https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json
+name: Spotlight Rules — standards conformance
+description: >-
+  What the Spotlight Rules project's own published artifacts declare they conform to. Spotlight
+  publishes no callable HTTP API, so there are no transport/API-protocol conformance claims here;
+  the conformance surface is the specification and JSON Schema it publishes, and the document
+  formats its linter is declared to govern.
+domain_standard:
+  market: API governance / API description linting
+  standard: Spectral ruleset format
+  declared_in_contract: true
+  evidence: >-
+    The provider's own JSON Schema (`$id`
+    https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json, title "Spectral
+    Ruleset") is a normative specification OF the Spectral ruleset format — the de-facto
+    machine-readable format for API governance rules. Spotlight is not merely a consumer of the
+    domain standard; the specification it publishes is an attempt to make that standard
+    tool-independent.
+  note: >-
+    Status is draft by the provider's own statement (spec.spotlight-rules.com/spec/). The `v1`
+    schema identity is stated as settled; the prose document is not.
+conformance:
+  - id: json-schema-2020-12
+    conforms: true
+    evidence: https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json
+    note: >-
+      The published ruleset schema declares
+      `"$schema": "https://json-schema.org/draft/2020-12/schema"` and a resolvable `$id` on the
+      provider's own host (HTTP 200, application/json, 2026-09-04).
+  - id: spectral-ruleset-format
+    conforms: true
+    evidence: https://spec.spotlight-rules.com/spec/
+    note: >-
+      The specification documents the format as implemented, without extension; the reference
+      implementation is api-commons/spotlight-tools, and the built-in ruleset aliases published on
+      npm are `spotlight:oas`, `spotlight:asyncapi`, `spotlight:arazzo`.
+  - id: openapi
+    conforms: true
+    evidence: https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json
+    note: >-
+      Governed document format. The schema's `format` definition registers oas2, oas3, oas3_0,
+      oas3_1 as recognized format identifiers.
+  - id: asyncapi
+    conforms: true
+    evidence: https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json
+    note: Registers asyncapi2 and aas2_0 through aas3_0 as recognized format identifiers.
+  - id: arazzo
+    conforms: true
+    evidence: https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json
+    note: Registers arazzo1_0 as a recognized format identifier.
+  - id: json-schema-drafts-4-through-2020-12
+    conforms: true
+    evidence: https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json
+    note: >-
+      Registers jsonSchema, jsonSchemaLoose, and the draft4 / draft6 / draft7 / 2019-09 / 2020-12
+      identifiers as governable formats.
+  - id: conformance-test-suite
+    conforms: false
+    evidence: https://spec.spotlight-rules.com/conformance/
+    note: >-
+      The provider states this plainly rather than claiming it: "Status: not written yet ... It is
+      the largest single gap between the current draft and a real specification." There is no
+      published test suite and therefore no falsifiable implementation-conformance claim. Recorded
+      because a self-declared gap is data, not an omission.
+  - id: soc2
+    conforms: false
+    evidence: probe of https://spotlight-rules.com/ and https://spec.spotlight-rules.com/ (2026-09-04)
+    note: >-
+      No trust center, certification, or audit claim is published. Expected — this is an
+      open-source specification and tooling project with no hosted service and no customer data.
+  - id: rfc9457
+    conforms: false
+    evidence: no HTTP API published
+    note: Not applicable — Spotlight Rules publishes no callable API, so there is no error envelope.
+licensing:
+  code: Apache-2.0
+  evidence: https://github.com/api-commons/spotlight-tools
+  note: >-
+    api-commons/spotlight-tools and api-commons/spotlight-spec both report license Apache-2.0 via
+    the GitHub API; the site states artifacts (schemas, rulesets, examples) are CC BY-NC-SA 4.0.

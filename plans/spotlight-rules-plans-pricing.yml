@@ -1,0 +1,30 @@
+generated: '2026-09-04'
+method: searched
+source: https://spotlight-rules.com/funding/
+name: Spotlight Rules — plans and pricing
+plan_count: 0
+pricing_model: none
+description: >-
+  Spotlight Rules publishes no plans, tiers or prices, and this is a stated position rather than a
+  gap. The project's funding page commits to open source "permanently" with no commercial tier —
+  "no feature gets held back to create a paid version" — and describes the intended funding model
+  as earmarked sponsorship through a fiscal host rather than a product with paid plans. The
+  specification, the JSON Schema, the rulesets and the npm packages are all free to use.
+plans: []
+funding_model:
+  kind: open-source / sponsorship
+  status: unresolved
+  docs: https://spotlight-rules.com/funding/
+  note: >-
+    The funding page argues the case for direct, earmarked sponsorship via a fiscal host and states
+    that the technical home and the fiscal arrangement are still open questions. No sponsorship
+    button, donation link, or fiscal host is live on the site as of 2026-09-04.
+licensing:
+  code: Apache-2.0
+  artifacts: CC BY-NC-SA 4.0
+  note: Stated in the project README and on the site footer.
+evidence:
+  - url: https://spotlight-rules.com/funding/
+    status: 200
+  - url: https://spotlight-rules.com/
+    status: 200

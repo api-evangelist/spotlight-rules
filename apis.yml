@@ -1,20 +1,83 @@
 aid: spotlight-rules
 name: Spotlight Rules
-description: 'Spotlight Rules is a company surfaced via the API Evangelist harvest backlog (source: under-enriched)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Spotlight Rules is an openly-governed build of the Spectral API linter and, more importantly, the
+  first attempt to publish the Spectral ruleset format as a standalone specification with its own
+  portable JSON Schema — so that an organization's API governance rules stop being configuration for
+  one vendor's CLI and become a durable, tool-independent artifact. Started in 2026 as a project of
+  API Evangelist and maintained in the open under API Commons, it ships four public things: the
+  specification and JSON Schema at spec.spotlight-rules.com, the reference implementation
+  (api-commons/spotlight-tools), eight Apache-2.0 npm packages under the @spotlight-rules scope
+  including the `spotlight` CLI, and a 332-rule best-of-breed governance ruleset compiled from public
+  Spectral rulesets. It publishes no hosted API and no commercial tier — the stated position is open
+  source permanently, funded by earmarked sponsorship rather than a paid version.
+image: https://spotlight-rules.com/assets/spotlight-rules-lockup.png
 url: https://raw.githubusercontent.com/api-evangelist/spotlight-rules/refs/heads/main/apis.yml
-x-type: company
-x-source: harvest:under-enriched
-x-tier: stub
-x-tier-reason: harvest
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-09-04'
 modified: '2026-09-04'
+x-type: company
+x-source: harvest:under-enriched
 tags:
-- Company
+  - API Governance
+  - API Linting
+  - Spectral
+  - Rulesets
+  - OpenAPI
+  - AsyncAPI
+  - Arazzo
+  - JSON Schema
+  - Specifications
+  - Open Source
+  - Developer Tools
+  - API Design
 apis: []
+common:
+  - type: DomainSecurity
+    url: security/spotlight-rules-domain-security.yml
+  - type: Website
+    url: https://spotlight-rules.com/
+  - type: Documentation
+    url: https://spec.spotlight-rules.com/spec/
+  - type: JSONSchema
+    url: json-schema/spotlight-rules-spectral-ruleset.schema.json
+  - type: Spectral
+    url: rules/spotlight-rules-recommended.yml
+  - type: Vocabulary
+    url: vocabulary/spotlight-rules-vocabulary.yml
+  - type: Packages
+    url: packages/spotlight-rules-packages.yml
+  - type: CLI
+    url: cli/spotlight-rules-cli.yml
+  - type: Conformance
+    url: conformance/spotlight-rules-conformance.yml
+  - type: Lifecycle
+    url: lifecycle/spotlight-rules-lifecycle.yml
+  - type: Plans
+    url: plans/spotlight-rules-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/spotlight-rules-rate-limits.yml
+  - type: LLMsTxt
+    url: llms/spotlight-rules-llms.txt
+  - type: Roadmap
+    url: https://spotlight-rules.com/roadmap/
+  - type: Blog
+    url: https://spotlight-rules.com/blog/
+  - type: BlogRSS
+    url: https://spotlight-rules.com/feed.xml
+  - type: GitHubOrganization
+    url: https://github.com/api-commons
+  - type: SourceCode
+    url: https://github.com/api-commons/spotlight-tools
+  - type: Support
+    url: https://github.com/orgs/api-commons/discussions/28
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
-- FN: APIs.json
-  email: info@apis.io
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+  - FN: APIs.json
+    email: info@apis.io
+x-enrichment:
+  date: '2026-09-04'
+  status: enriched
+  artifacts_added: 12
+  pass: local-v3

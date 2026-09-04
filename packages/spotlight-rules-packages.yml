@@ -1,0 +1,129 @@
+generated: '2026-09-04'
+method: searched
+source: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-cli (and the seven sibling packages in the same scope)
+name: Spotlight Rules — published packages
+description: >-
+  First-party npm packages published by the Spotlight Rules project under the
+  @spotlight-rules scope. These are the linting ENGINE and its ruleset/format
+  libraries — the API Commons build of the Spectral linter — not client SDKs for
+  a hosted API. Spotlight Rules publishes no callable HTTP API, so there is no
+  API client library to record and no `SDKs` pointer is claimed.
+registries_checked:
+  - registry: npm
+    result: 8 packages found in the @spotlight-rules scope
+  - registry: pypi
+    result: none (JavaScript/TypeScript project)
+  - registry: rubygems
+    result: none
+  - registry: crates.io
+    result: none
+  - registry: packagist
+    result: none
+  - registry: nuget
+    result: none
+  - registry: maven-central
+    result: none
+  - registry: pkg.go.dev
+    result: none
+notes:
+  - The whole scope was published in one release wave on 2026-06-27 at 1.1.0; every
+    package carries exactly two published versions (1.0.0 and 1.1.0). That single
+    shared date is the currency signal for the entire distribution.
+  - The npm README on @spotlight-rules/spotlight-cli is still the inherited upstream
+    Spectral README — it links stoplight.io docs and shows `spectral lint` in the
+    usage example, while the installed binary is `spotlight`. Observed 2026-09-04.
+  - Source repositories for these packages are not public in the api-commons GitHub
+    org (github.com/api-commons/spotlight-cli returns 404 unauthenticated); the
+    packages themselves are public on npm.
+packages:
+  - name: '@spotlight-rules/spotlight-cli'
+    registry: npm
+    official: true
+    language: javascript
+    kind: cli
+    version: 1.1.0
+    published: '2026-06-27'
+    first_published: '2026-06-26'
+    versions_published: 2
+    license: Apache-2.0
+    bin: spotlight
+    url: https://www.npmjs.com/package/@spotlight-rules/spotlight-cli
+    metadata: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-cli
+    description: Spotlight command-line linter for OpenAPI, AsyncAPI, and Arazzo descriptions.
+  - name: '@spotlight-rules/spotlight-core'
+    registry: npm
+    official: true
+    language: javascript
+    kind: library
+    version: 1.1.0
+    published: '2026-06-27'
+    license: Apache-2.0
+    url: https://www.npmjs.com/package/@spotlight-rules/spotlight-core
+    metadata: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-core
+    description: Core linting engine for Spotlight — runs rulesets against JSON/YAML API artifacts.
+  - name: '@spotlight-rules/spotlight-rulesets'
+    registry: npm
+    official: true
+    language: javascript
+    kind: ruleset
+    version: 1.1.0
+    published: '2026-06-27'
+    license: Apache-2.0
+    url: https://www.npmjs.com/package/@spotlight-rules/spotlight-rulesets
+    metadata: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-rulesets
+    description: Ready-to-use Spotlight rulesets for OpenAPI, AsyncAPI, and Arazzo.
+  - name: '@spotlight-rules/spotlight-functions'
+    registry: npm
+    official: true
+    language: javascript
+    kind: library
+    version: 1.1.0
+    published: '2026-06-27'
+    license: Apache-2.0
+    url: https://www.npmjs.com/package/@spotlight-rules/spotlight-functions
+    metadata: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-functions
+    description: Built-in rule functions for Spotlight rulesets.
+  - name: '@spotlight-rules/spotlight-formats'
+    registry: npm
+    official: true
+    language: javascript
+    kind: library
+    version: 1.1.0
+    published: '2026-06-27'
+    license: Apache-2.0
+    url: https://www.npmjs.com/package/@spotlight-rules/spotlight-formats
+    metadata: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-formats
+    description: Document format detection for Spotlight (OpenAPI, AsyncAPI, Arazzo, JSON Schema).
+  - name: '@spotlight-rules/spotlight-parsers'
+    registry: npm
+    official: true
+    language: javascript
+    kind: library
+    version: 1.1.0
+    published: '2026-06-27'
+    license: Apache-2.0
+    url: https://www.npmjs.com/package/@spotlight-rules/spotlight-parsers
+    metadata: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-parsers
+    description: JSON and YAML parsers for Spotlight.
+  - name: '@spotlight-rules/spotlight-ruleset-migrator'
+    registry: npm
+    official: true
+    language: javascript
+    kind: library
+    version: 1.1.0
+    published: '2026-06-27'
+    license: Apache-2.0
+    url: https://www.npmjs.com/package/@spotlight-rules/spotlight-ruleset-migrator
+    metadata: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-ruleset-migrator
+    description: Migrates legacy rulesets to the current Spotlight ruleset format.
+  - name: '@spotlight-rules/spotlight-runtime'
+    registry: npm
+    official: true
+    language: javascript
+    kind: library
+    version: 1.1.0
+    published: '2026-06-27'
+    license: Apache-2.0
+    url: https://www.npmjs.com/package/@spotlight-rules/spotlight-runtime
+    metadata: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-runtime
+    description: Runtime utilities shared across the Spotlight packages.

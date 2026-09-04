@@ -1,0 +1,79 @@
+generated: '2026-09-04'
+method: searched
+source: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-cli
+name: Spotlight CLI
+binary: spotlight
+package: '@spotlight-rules/spotlight-cli'
+version: 1.1.0
+published: '2026-06-27'
+license: Apache-2.0
+description: >-
+  The Spotlight command-line linter — the API Commons build of the Spectral CLI. Lints
+  OpenAPI 2.0/3.x, AsyncAPI, Arazzo and arbitrary JSON/YAML documents against a Spotlight
+  (Spectral-format) ruleset, from files, globs or fetchable URLs.
+install:
+  - method: npm
+    command: npm install -g @spotlight-rules/spotlight-cli
+  - method: yarn
+    command: yarn global add @spotlight-rules/spotlight-cli
+  - method: npx
+    command: npx @spotlight-rules/spotlight-cli lint openapi.yaml
+commands:
+  - name: lint
+    usage: spotlight lint [documents..]
+    description: Lint JSON/YAML documents from files, globs or URLs against a ruleset.
+    positionals:
+      - name: documents
+        description: A file, a glob, or fetchable resource(s) on the web.
+options:
+  - flag: --ruleset
+    alias: -r
+    description: Path or URL to the ruleset file to lint against.
+  - flag: --format
+    alias: -f
+    description: Output format.
+    values: [stylish, json, junit, html, text, teamcity, pretty, github-actions, sarif, code-climate, gitlab]
+  - flag: --output
+    alias: -o
+    description: Where to write the results.
+  - flag: --encoding
+    alias: -e
+    description: Text encoding to use.
+  - flag: --verbose
+    alias: -v
+    description: Increase verbosity.
+  - flag: --quiet
+    alias: -q
+    description: Suppress non-result output.
+  - flag: --fail-severity
+    alias: -F
+    description: Results of this level or above cause a non-zero exit code.
+  - flag: --display-only-failures
+    alias: -D
+    description: Only display the results that would trigger a failure.
+  - flag: --stdin-filepath
+    description: Path to use for the document read from stdin (drives format detection).
+  - flag: --ignore-unknown-format
+    description: Do not warn when a document format cannot be detected.
+  - flag: --fail-on-unmatched-globs
+    description: Fail when a provided glob matches no documents.
+  - flag: --show-documentation-url
+    description: Show the documentationUrl of a rule alongside each result.
+rulesets_builtin:
+  - 'spotlight:oas'
+  - 'spotlight:asyncapi'
+  - 'spotlight:arazzo'
+evidence:
+  - what: published package metadata (version, date, license, bin name)
+    url: https://registry.npmjs.org/@spotlight-rules%2Fspotlight-cli
+    http_status: 200
+  - what: command + option surface read from the published tarball (dist/commands/lint.js, dist/services/config.js)
+    url: https://registry.npmjs.org/@spotlight-rules/spotlight-cli/-/spotlight-cli-1.1.0.tgz
+    http_status: 200
+notes:
+  - The CLI exposes exactly one command, `lint`. There is no `serve`, `init`, or ruleset-scaffold
+    command in 1.1.0.
+  - Built-in ruleset aliases are namespaced `spotlight:` (the API Commons build), and the shipped
+    rulesets are also published standalone as @spotlight-rules/spotlight-rulesets.
+  - The npm README still carries the inherited upstream Spectral text and shows `spectral lint`;
+    the installed binary is `spotlight`.

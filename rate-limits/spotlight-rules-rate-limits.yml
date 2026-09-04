@@ -1,0 +1,19 @@
+generated: '2026-09-04'
+method: probed
+source: contract discovery probe of spotlight-rules.com, spec.spotlight-rules.com and validator.spotlight-rules.com (2026-09-04)
+name: Spotlight Rules — rate limits
+limit_count: 0
+description: >-
+  No rate limits are published, and there is no surface for them. Spotlight Rules ships a
+  specification, a JSON Schema, rulesets and npm packages — the linter runs locally on the
+  consumer's own machine or CI. No callable HTTP API was found on any host after full contract
+  discovery, so there is nothing to rate limit and no runtime headers to record.
+rate_limits: []
+response_headers: []
+evidence:
+  - url: https://spotlight-rules.com/openapi.json
+    status: 404
+  - url: https://spec.spotlight-rules.com/openapi.json
+    status: 404
+  - url: https://spotlight-rules.com/.well-known/api-catalog
+    status: 404

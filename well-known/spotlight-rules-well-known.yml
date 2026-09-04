@@ -1,0 +1,103 @@
+generated: '2026-09-04'
+method: probed
+source: live probe of every host this record knows
+name: Spotlight Rules — /.well-known probe
+description: 'Every /.well-known path in the pipeline''s named list, probed against all three hosts the
+  record knows: spotlight-rules.com (the project site), spec.spotlight-rules.com (the specification site)
+  and validator.spotlight-rules.com (the CNAME on api-commons/spotlight-validator). Every path on every
+  host returned 404 with a GitHub Pages HTML 404 body. No WellKnown, SecurityTxt or AgentCard pointer
+  is claimed — this file records a measured absence, not a served surface.'
+hosts_note: All three hosts are GitHub Pages sites, which serve a 404 for any unrouted path; none of the
+  404s is a soft-200 or an SPA catch-all. validator.spotlight-rules.com additionally returns 404 at its
+  own root — the CNAME is published in the repo but no Pages site answers on it; the validator is served
+  at https://apicommons.org/rules/ instead.
+result: no documents served
+documents_found: 0
+hosts:
+- host: spotlight-rules.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: spec.spotlight-rules.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: validator.spotlight-rules.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null

@@ -64,4 +64,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Spotlight Rules is a company surfaced via the API Evangelist harvest backlog (source: under-enriched) and added to the network as a stub for full-pipeline profiling.
+Spotlight Rules is an openly-governed build of the Spectral API linter and, more importantly, the first
+attempt to publish the Spectral ruleset format as a standalone specification with its own portable JSON
+Schema — so that an organization's API governance rules stop being configuration for one vendor's CLI and
+become a durable, tool-independent artifact. Started in 2026 as a project of API Evangelist and maintained
+in the open under API Commons.
+
+**Public surface profiled here** (probed 2026-09-04): the specification and JSON Schema v1 at
+[spec.spotlight-rules.com](https://spec.spotlight-rules.com/), the project site at
+[spotlight-rules.com](https://spotlight-rules.com/), the reference implementation
+[api-commons/spotlight-tools](https://github.com/api-commons/spotlight-tools), eight Apache-2.0 npm packages
+in the `@spotlight-rules` scope (including the `spotlight` CLI), and a 332-rule governance ruleset.
+
+**No callable API.** Full contract discovery — OpenAPI/Swagger paths on every host, `/.well-known/*` on all
+three hosts, GraphQL, MCP and A2A agent-card probes — returned 404 everywhere. Spotlight Rules ships a
+specification and locally-run tooling, not a hosted service, so there is no base URL, no plans, and no rate
+limits to record. That is an accurate description of the product, not a gap in it.

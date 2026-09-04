@@ -1,0 +1,134 @@
+generated: '2026-09-04'
+method: derived
+source: json-schema/spotlight-rules-spectral-ruleset.schema.json
+name: Spotlight ruleset format vocabulary
+description: The controlled vocabulary of the Spectral/Spotlight ruleset format, derived term by term
+  from the definitions in the provider's own published JSON Schema (v1) at https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json.
+  Every definition below is the schema's own `description` text — nothing was authored for this file.
+schema_id: https://spec.spotlight-rules.com/schema/v1/spectral-ruleset.schema.json
+schema_dialect: https://json-schema.org/draft/2020-12/schema
+term_count: 26
+terms:
+- term: description
+  kind: ruleset-property
+  definition: Human-readable description of what this ruleset governs.
+  source_pointer: '#/properties/description'
+- term: documentationUrl
+  kind: ruleset-property
+  definition: URL to documentation for this ruleset. Used as the fallback documentation link for any rule
+    that does not declare its own.
+  source_pointer: '#/properties/documentationUrl'
+- term: formats
+  kind: ruleset-property
+  definition: Document formats this ruleset applies to. Acts as the default for every rule that does not
+    declare its own formats. When omitted, rules apply to every document.
+  source_pointer: '#/properties/formats'
+- term: extends
+  kind: ruleset-property
+  definition: Other rulesets this ruleset inherits from.
+  source_pointer: '#/properties/extends'
+- term: rules
+  kind: ruleset-property
+  definition: Map of rule name to rule definition. A rule name is the stable identifier reported in results
+    and used to override the rule downstream.
+  source_pointer: '#/properties/rules'
+- term: aliases
+  kind: ruleset-property
+  definition: Named, reusable path expressions that rules may reference from `given` with a leading `#`.
+  source_pointer: '#/properties/aliases'
+- term: overrides
+  kind: ruleset-property
+  definition: Per-file and per-location adjustments applied on top of the ruleset.
+  source_pointer: '#/properties/overrides'
+- term: parserOptions
+  kind: ruleset-property
+  definition: Severities for problems detected while parsing the document itself, before any rule runs.
+  source_pointer: '#/properties/parserOptions'
+- term: functions
+  kind: ruleset-property
+  definition: Names of custom functions to load from `functionsDir`. Serialized rulesets only; JavaScript
+    rulesets import functions directly instead.
+  source_pointer: '#/properties/functions'
+- term: functionsDir
+  kind: ruleset-property
+  definition: Directory, relative to the ruleset file, that custom functions named in `functions` are
+    loaded from. Defaults to `functions`.
+  source_pointer: '#/properties/functionsDir'
+- term: numericSeverity
+  kind: ruleset-concept
+  definition: 0 = error, 1 = warn, 2 = info, 3 = hint, -1 = off.
+  source_pointer: '#/$defs/numericSeverity'
+- term: severity
+  kind: ruleset-concept
+  definition: How a rule's results are reported. `off` (-1) disables the rule. Defaults to `warn` when
+    unset.
+  source_pointer: '#/$defs/severity'
+- term: format
+  kind: ruleset-concept
+  definition: Identifier of a document format. A format is a predicate that decides whether a given document
+    is of that kind, so a rule scoped to a format only runs against matching documents. The listed values
+    are those registered by the reference implementation; any string is permitted so that new and custom
+    formats remain valid.
+  source_pointer: '#/$defs/format'
+- term: pathExpression
+  kind: ruleset-concept
+  definition: Either a JSONPath expression beginning with `$`, or an alias reference beginning with `#`
+    optionally followed by a JSONPath subset (for example `#Info.description`).
+  source_pointer: '#/$defs/pathExpression'
+- term: given
+  kind: ruleset-concept
+  definition: The part or parts of the document a rule is applied to. A single path expression, or an
+    array of them.
+  source_pointer: '#/$defs/given'
+- term: functionInvocation
+  kind: ruleset-concept
+  definition: 'The assertion half of a rule: the function to run against each node matched by `given`,
+    and the options it takes.'
+  source_pointer: '#/$defs/functionInvocation'
+- term: then
+  kind: ruleset-concept
+  definition: One assertion, or an array of assertions all applied to the nodes matched by `given`.
+  source_pointer: '#/$defs/then'
+- term: ruleDefinition
+  kind: ruleset-concept
+  definition: 'A complete rule: where to look (`given`) and what must hold there (`then`).'
+  source_pointer: '#/$defs/ruleDefinition'
+- term: rule
+  kind: ruleset-concept
+  definition: A full rule definition, or — when adjusting a rule inherited via `extends` — a severity
+    string, or a boolean where false disables the rule and true restores its declared severity.
+  source_pointer: '#/$defs/rule'
+- term: extendsEntry
+  kind: ruleset-concept
+  definition: 'A reference to another ruleset: a built-in (`spectral:oas`, `spectral:asyncapi`, `spectral:arazzo`),
+    a file path, an npm module, or a URL.'
+  source_pointer: '#/$defs/extendsEntry'
+- term: extendsTuple
+  kind: ruleset-concept
+  definition: 'A ruleset reference paired with the set of its rules to enable: `recommended` (the default),
+    `all`, or `off`.'
+  source_pointer: '#/$defs/extendsTuple'
+- term: aliasTarget
+  kind: ruleset-concept
+  definition: The path expressions an alias resolves to for one set of formats.
+  source_pointer: '#/$defs/aliasTarget'
+- term: scopedAlias
+  kind: ruleset-concept
+  definition: An alias that resolves to different path expressions depending on the format of the document
+    being linted.
+  source_pointer: '#/$defs/scopedAlias'
+- term: alias
+  kind: ruleset-concept
+  definition: Either a list of path expressions, or a scoped alias that varies by format.
+  source_pointer: '#/$defs/alias'
+- term: overrides
+  kind: ruleset-concept
+  definition: Ordered list of adjustments. Later matching entries win over earlier ones, and every override
+    wins over the base ruleset.
+  source_pointer: '#/$defs/overrides'
+- term: override
+  kind: ruleset-concept
+  definition: An adjustment scoped by `files`. When every glob in `files` carries a JSON Pointer fragment
+    (`path/to/file.yaml#/paths/~1users`), the override may only change rule severities. Otherwise it may
+    change anything a ruleset can declare.
+  source_pointer: '#/$defs/override'

@@ -1,0 +1,77 @@
+generated: '2026-09-04'
+method: searched
+source: https://spec.spotlight-rules.com/versioning/
+name: Spotlight Rules — lifecycle and versioning
+description: >-
+  Versioning, stability and change-management posture for the Spotlight ruleset specification and
+  its reference implementation, read from the provider's own published pages. There is no hosted
+  service here, so there is no uptime/SLA/status surface to record.
+versioning:
+  status: proposed
+  docs: https://spec.spotlight-rules.com/versioning/
+  note: >-
+    The provider labels the page "Status: proposed. This page is a starting point to argue with,
+    not a decided policy." It is captured as published intent, not as a ratified policy.
+  two_version_lines:
+    - line: specification
+      current: v1
+      identity_stable: true
+      note: >-
+        "The `v1` schema identity is not a draft. Once published, a given version's URI resolves to
+        the same bytes forever." The document itself is stated to be a draft.
+    - line: implementation
+      current: '6.x'
+      note: The reference implementation is on a 6.x line inherited from upstream Spectral.
+  rules_stated:
+    - Never invalidate a ruleset that was valid within a major version.
+    - Never move or repoint a published `$id`.
+    - Never unpublish a version.
+    - Never make the specification depend on any single implementation.
+    - Dated revisions within a major, alongside a stable major alias, so people can pin.
+  change_classification:
+    additive: New optional property, newly registered format identifier, clarified prose — new dated
+      revision, same major identity, changelog entry.
+    breaking: Anything that would reject a previously valid ruleset — new major, new directory, new
+      `$id`; the previous major keeps resolving forever.
+    correction: Widening what is accepted is additive; narrowing is breaking and requires an explicit
+      deprecation period.
+deprecation:
+  policy_published: false
+  status: proposed
+  docs: https://spec.spotlight-rules.com/versioning/
+  note: >-
+    A deprecation provision exists inside the proposed versioning policy ("narrowing requires an
+    explicit deprecation period", plus a public comment window before any format change lands, with
+    known implementers notified directly). It is not published as a standalone, decided deprecation
+    policy, so no `Deprecation` pointer is claimed for it.
+  sunset_headers: null
+status_page:
+  published: false
+  note: >-
+    No status page. Expected — the deliverables are a specification, a JSON Schema, npm packages and
+    Jekyll sites on GitHub Pages; there is no hosted runtime whose availability could be reported.
+sla:
+  published: false
+release_cadence:
+  packages:
+    registry: npm
+    scope: '@spotlight-rules'
+    versions_published: 2
+    latest: 1.1.0
+    latest_published: '2026-06-27'
+    note: The whole scope shipped 1.0.0 and 1.1.0 in one wave; no release since 2026-06-27.
+  github_releases: 0
+  note: >-
+    No GitHub releases or tags are published on api-commons/spotlight-tools, spotlight-spec,
+    spotlight-rules or spotlight-validator (GitHub releases API, 2026-09-04). Dated project news is
+    published as blog posts instead — 12 posts between 2026-07-30 and 2026-09-01.
+governance:
+  docs: https://spec.spotlight-rules.com/governance/
+  org: API Commons (github.com/api-commons)
+  process: >-
+    Public comment window before any proposed format change lands, with known implementers notified
+    directly; discussion in github.com/orgs/api-commons/discussions/28.
+conformance_suite:
+  published: false
+  docs: https://spec.spotlight-rules.com/conformance/
+  note: 'Provider-stated gap — "Status: not written yet."'
