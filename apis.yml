@@ -1,0 +1,20 @@
+aid: spotlight-rules
+name: Spotlight Rules
+description: 'Spotlight Rules is a company surfaced via the API Evangelist harvest backlog (source: under-enriched)
+  and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/spotlight-rules/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:under-enriched
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-09-04'
+modified: '2026-09-04'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
