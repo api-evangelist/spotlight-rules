@@ -1,0 +1,21 @@
+{
+  "repo": "spotlight-rules",
+  "feeds": [
+    {
+      "source": "https://spotlight-rules.com/blog/",
+      "feed_url": "https://spotlight-rules.com/blog/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://spotlight-rules.com/roadmap/",
+      "feed_url": "https://spotlight-rules.com/feed.xml",
+      "title": "",
+      "saved": 1,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 1,
+  "fetched": "2026-09-06T19:17:18Z"
+}
