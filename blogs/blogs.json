@@ -10,19 +10,19 @@
     },
     {
       "source": "https://spotlight-rules.com/roadmap/",
-      "feed_url": "https://spotlight-rules.com/feed.xml",
+      "feed_url": "https://spotlight-rules.com/roadmap/",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "none"
     },
     {
       "source": "https://spotlight-rules.com/feed.xml",
       "feed_url": "https://spotlight-rules.com/feed.xml",
       "title": "",
       "saved": 0,
-      "method": "feed"
+      "method": "none"
     }
   ],
   "post_count": 12,
-  "fetched": "2026-09-19T20:17:39Z"
+  "fetched": "2026-10-03T12:30:02Z"
 }
