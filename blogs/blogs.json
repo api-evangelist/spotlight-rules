@@ -9,20 +9,20 @@
       "method": "none"
     },
     {
-      "source": "https://spotlight-rules.com/roadmap/",
-      "feed_url": "https://spotlight-rules.com/roadmap/",
+      "source": "https://spotlight-rules.com/feed.xml",
+      "feed_url": "https://spotlight-rules.com/feed.xml",
       "title": "",
       "saved": 0,
       "method": "none"
     },
     {
-      "source": "https://spotlight-rules.com/feed.xml",
-      "feed_url": "https://spotlight-rules.com/feed.xml",
+      "source": "https://spotlight-rules.com/roadmap/",
+      "feed_url": "https://spotlight-rules.com/roadmap/",
       "title": "",
       "saved": 0,
       "method": "none"
     }
   ],
   "post_count": 12,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
